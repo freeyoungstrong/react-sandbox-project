@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const App = () => {
-  return <h1>React sandbox project</h1>;
-};
+import { App } from './App.jsx';
 
 ReactDOM.render(<App />, document.getElementById('root'));
