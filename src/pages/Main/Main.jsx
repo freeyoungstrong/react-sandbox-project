@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import CSSModules from 'react-css-modules';
 
+import { Button } from 'shared/components';
 import styles from './styles';
 
 const clientID = 'HJMbmNcehaxbaYakdLSgDRjhRTce2lobeFrh2VKPc5Q';
@@ -36,9 +37,7 @@ const Main = () => {
   return (
     <div styleName={componentStyles.background}>
       {url && <img src={url} alt={altImage} />}
-      <button onClick={getRandomPhoto} styleName={componentStyles.button}>
-        Get random image
-      </button>
+      <Button onClick={getRandomPhoto} title="Get random image" />
     </div>
   );
 };
