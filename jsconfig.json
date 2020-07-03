@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "checkJs": true,
+    "jsx": "react",
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "shared/*": ["shared/*"],
+      "pages/*": ["pages/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules"]
+}
